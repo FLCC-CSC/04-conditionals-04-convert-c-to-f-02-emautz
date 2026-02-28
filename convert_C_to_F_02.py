@@ -1,8 +1,10 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: Elizabeth Mautz
+# DATE: February 28, 2026
+# BRIEF DESCRIPTION: ask user convert C to F or F to C
+# user is then prompted to enter a temperature
+# converted temperature is output
 
 
 
@@ -14,6 +16,24 @@
 
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
+
+print("===== Temperature Converter =====")
+print()
+print("  1. Convert from Celsius to Fahrenheit")
+print("  2. Convert from Fahrenheit to Celsius")
+print()
+choice = int(input("Please choose from the above menu: "))
+
+if choice == 1:
+    temperature = int(input("Enter a temperature to convert: "))
+    converted = temperature * 9/5 + 32
+    print()
+    print(f"{temperature:.1f} degrees Celsius is {converted} degrees Fahrenheit.")
+else:
+    temperature = int(input("Enter a temperature to convert: "))
+    converted = (temperature - 32 ) * 5/9
+    print()
+    print(f"{temperature:.1f} degrees Fahrenheit is {converted} degrees Celsius.")
 
 
 
@@ -92,7 +112,8 @@ Enter a temperature to convert: -40
 '''
 
 1. What is one lesson you learned in this lab?
-
+I learned to make sure you're testing your code constantly. If I hadn't done that, I wouldn't
+have put the specific decimal place that the input temeperature needs to go to.
 
 
 
